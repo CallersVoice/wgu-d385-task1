@@ -1,0 +1,24 @@
+{
+  "records": 306,
+  "levels": {
+    "INFO": 252,
+    "ERROR": 12,
+    "WARNING": 42
+  },
+  "events": {
+    "request_received": 95,
+    "unknown_equipment": 12,
+    "request_completed": 95,
+    "invalid_rental_days": 34,
+    "assertion_passed": 38,
+    "rental_calculated": 11,
+    "home_accessed": 8,
+    "application_start": 3,
+    "login_success": 2,
+    "login_failed": 2,
+    "login_disabled": 2,
+    "untrusted_network": 2,
+    "invalid_client_ip": 2
+  },
+  "notes": "Includes deliberately simulated regression traffic and live browser requests; not production incidents."
+}

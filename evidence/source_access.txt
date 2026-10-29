@@ -1,0 +1,6 @@
+owasp_static: ProxyError https://owasp.org/www-community/controls/Static_Code_Analysis
+owasp_logging: ProxyError https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html
+python_assert: ProxyError https://docs.python.org/3/reference/simple_stmts.html#the-assert-statement
+python_logging: ProxyError https://docs.python.org/3/library/logging.html
+werkzeug_hash: ProxyError https://werkzeug.palletsprojects.com/en/stable/utils/#werkzeug.security.generate_password_hash
+flask_security: ProxyError https://flask.palletsprojects.com/en/stable/web-security/

@@ -1,0 +1,4 @@
+{
+  "folders": [{"path": "application"}],
+  "settings": {"python.testing.pytestEnabled": true, "python.testing.pytestArgs": ["test_run.py"]}
+}

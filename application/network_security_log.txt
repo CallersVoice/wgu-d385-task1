@@ -1,0 +1,140 @@
+# Network and Application Security Log
+# WGU Construction Equipment Rental System
+# Date Range: 2025-12-15 to 2025-12-21
+# ============================================================
+
+2025-12-15 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-15 06:00:05 - NETWORK - INFO - System Interface 'eth0' UP. IP: 192.168.1.10
+2025-12-15 06:00:06 - NETWORK - INFO - System Interface 'eth1' UP. IP: 10.0.0.1 (Internal VPN)
+2025-12-15 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-15 06:00:11 - APP - INFO - Database connection pool initialized: 10 connections
+2025-12-15 06:00:12 - APP - INFO - Equipment pricing loaded: 3 items available.
+2025-12-15 08:15:22 - APP - INFO - Home page accessed from 192.168.1.55
+2025-12-15 08:16:45 - APP - INFO - Rental request received: Excavator for 5 days from 192.168.1.55
+2025-12-15 08:16:45 - APP - INFO - Rental confirmed: Excavator, 5 days, Total: $2250
+2025-12-15 09:30:00 - SECURITY - INFO - Login successful for user 'alice' from IP: 192.168.1.102
+2025-12-15 09:45:12 - APP - INFO - Rental request received: Crane for 2 days from 192.168.1.102
+2025-12-15 09:45:12 - APP - INFO - Rental confirmed: Crane, 2 days, Total: $1600
+2025-12-15 14:22:33 - SYSTEM - INFO - Disk usage check: 45% used. Status: Healthy
+2025-12-15 18:00:00 - APP - INFO - Daily summary: 12 rentals processed, $18,450 total revenue
+
+2025-12-16 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-16 06:00:05 - NETWORK - INFO - System Interface 'eth0' UP. IP: 192.168.1.10
+2025-12-16 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-16 08:05:23 - APP - INFO - Home page accessed from 192.168.1.55
+2025-12-16 10:15:00 - APP - ERROR - ValueError: Invalid rental days value 'abc' submitted from 192.168.1.78
+2025-12-16 10:15:01 - APP - WARNING - User submitted non-numeric rental days. IP: 192.168.1.78
+2025-12-16 11:30:45 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 45.33.32.156
+2025-12-16 11:30:47 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 45.33.32.156
+2025-12-16 11:30:48 - SECURITY - WARNING - Failed login attempt for user 'administrator' from IP: 45.33.32.156
+2025-12-16 11:30:49 - SECURITY - WARNING - Failed login attempt for user 'root' from IP: 45.33.32.156
+2025-12-16 11:30:50 - SECURITY - CRITICAL - Potential brute force attack detected from IP: 45.33.32.156 (5 attempts in 5 seconds)
+2025-12-16 11:30:51 - SECURITY - INFO - IP 45.33.32.156 added to temporary blocklist (30 minutes)
+2025-12-16 14:22:33 - SYSTEM - INFO - Disk usage check: 52% used. Status: Healthy
+2025-12-16 15:45:00 - APP - INFO - Rental request received: Bulldozer for 7 days from 192.168.1.45
+2025-12-16 15:45:00 - APP - INFO - Rental confirmed: Bulldozer, 7 days, Total: $3500
+2025-12-16 18:00:00 - APP - INFO - Daily summary: 8 rentals processed, $12,200 total revenue
+
+2025-12-17 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-17 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-17 09:12:33 - APP - INFO - Home page accessed from 10.0.0.5
+2025-12-17 09:13:00 - SECURITY - INFO - Login successful for user 'bob' from IP: 10.0.0.5 (Internal VPN)
+2025-12-17 09:15:22 - APP - ERROR - KeyError: Equipment type 'Forklift' not found in pricing dictionary
+2025-12-17 09:15:22 - APP - WARNING - User attempted to rent unavailable equipment: Forklift
+2025-12-17 10:30:00 - NETWORK - WARNING - High latency detected on gateway 192.168.1.1 (avg: 450ms)
+2025-12-17 10:35:00 - NETWORK - WARNING - High latency detected on gateway 192.168.1.1 (avg: 520ms)
+2025-12-17 10:40:00 - NETWORK - INFO - Gateway latency normalized (avg: 12ms)
+2025-12-17 11:00:00 - APP - INFO - Rental request received: Crane for 10 days from 192.168.1.33
+2025-12-17 11:00:00 - APP - INFO - Rental confirmed: Crane, 10 days, Total: $8000
+2025-12-17 14:22:33 - SYSTEM - INFO - Disk usage check: 61% used. Status: Healthy
+2025-12-17 16:45:12 - APP - ERROR - AssertionError: Number of days must be greater than zero. Input: days=-3
+2025-12-17 16:45:12 - APP - WARNING - Negative rental days rejected. Possible exploitation attempt from 203.0.113.99
+2025-12-17 18:00:00 - APP - INFO - Daily summary: 15 rentals processed, $22,100 total revenue
+
+2025-12-18 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-18 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-18 08:00:15 - APP - INFO - Home page accessed from 192.168.1.55
+2025-12-18 08:30:00 - SECURITY - INFO - Login successful for user 'charlie' from IP: 192.168.1.55
+2025-12-18 09:00:00 - APP - INFO - Rental request received: Bulldozer for 1 days from 192.168.1.55
+2025-12-18 09:00:00 - APP - INFO - Rental confirmed: Bulldozer, 1 days, Total: $500
+2025-12-18 12:00:00 - SYSTEM - WARNING - Memory usage high: 78% utilized
+2025-12-18 12:05:00 - SYSTEM - WARNING - Memory usage high: 82% utilized
+2025-12-18 12:10:00 - SYSTEM - INFO - Memory usage normalized: 45% utilized (garbage collection completed)
+2025-12-18 14:22:33 - SYSTEM - INFO - Disk usage check: 68% used. Status: Healthy
+2025-12-18 15:00:00 - APP - INFO - Rental request received: Excavator for 3 days from 192.168.1.102
+2025-12-18 15:00:00 - APP - INFO - Rental confirmed: Excavator, 3 days, Total: $1350
+2025-12-18 18:00:00 - APP - INFO - Daily summary: 11 rentals processed, $16,750 total revenue
+
+2025-12-19 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-19 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-19 08:15:00 - APP - INFO - Home page accessed from 192.168.1.45
+2025-12-19 10:22:15 - SECURITY - WARNING - Login attempt from potentially suspicious IP: 203.0.113.45
+2025-12-19 10:22:15 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 203.0.113.45
+2025-12-19 10:22:16 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 203.0.113.45
+2025-12-19 10:22:17 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 203.0.113.45
+2025-12-19 10:22:18 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 203.0.113.45
+2025-12-19 10:22:19 - SECURITY - WARNING - Failed login attempt for user 'admin' from IP: 203.0.113.45
+2025-12-19 10:22:20 - SECURITY - CRITICAL - Brute force attack confirmed from IP: 203.0.113.45 (6 attempts in 5 seconds)
+2025-12-19 10:22:21 - SECURITY - INFO - IP 203.0.113.45 added to permanent blocklist
+2025-12-19 10:22:22 - SECURITY - INFO - Alert sent to security team: brute_force_attack@203.0.113.45
+2025-12-19 11:45:00 - APP - INFO - Rental request received: Crane for 5 days from 192.168.1.78
+2025-12-19 11:45:00 - APP - INFO - Rental confirmed: Crane, 5 days, Total: $4000
+2025-12-19 14:22:33 - SYSTEM - INFO - Disk usage check: 75% used. Status: Warning
+2025-12-19 14:22:34 - SYSTEM - WARNING - Disk usage approaching critical threshold (80%)
+2025-12-19 16:00:00 - APP - ERROR - RuntimeError: Database connection timeout after 30 seconds
+2025-12-19 16:00:05 - APP - INFO - Database connection re-established
+2025-12-19 18:00:00 - APP - INFO - Daily summary: 9 rentals processed, $14,350 total revenue
+
+2025-12-20 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-20 06:00:05 - NETWORK - INFO - System Interface 'eth0' UP. IP: 192.168.1.10
+2025-12-20 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-20 08:00:01 - APP - INFO - Home page accessed from 192.168.1.55
+2025-12-20 09:00:00 - NETWORK - WARNING - High latency detected on gateway 192.168.1.1 (avg: 890ms)
+2025-12-20 09:05:00 - NETWORK - ERROR - Gateway 192.168.1.1 unreachable. Failover to backup gateway.
+2025-12-20 09:05:02 - NETWORK - INFO - Backup gateway 192.168.1.2 active
+2025-12-20 09:30:15 - SECURITY - WARNING - Multiple failed login attempts from IP: 203.0.113.45 (User: admin)
+2025-12-20 09:30:16 - SECURITY - WARNING - Multiple failed login attempts from IP: 203.0.113.45 (User: admin)
+2025-12-20 09:30:17 - SECURITY - WARNING - Multiple failed login attempts from IP: 203.0.113.45 (User: admin)
+2025-12-20 09:30:18 - SECURITY - CRITICAL - Blocklisted IP 203.0.113.45 attempting access - connection terminated
+2025-12-20 09:30:20 - SECURITY - INFO - Login successful for user 'admin' from IP: 192.168.1.10 (localhost)
+2025-12-20 10:00:00 - APP - INFO - Rental request received: Bulldozer for 0 days from 192.168.1.78
+2025-12-20 10:00:00 - APP - ERROR - AssertionError: Number of days must be greater than zero. Input: days=0
+2025-12-20 10:00:01 - APP - WARNING - Zero-day rental rejected. Request from: 192.168.1.78
+2025-12-20 10:15:00 - APP - ERROR - RuntimeException: ZeroDivisionError in calculate_rental_cost. Input: days=0
+2025-12-20 10:15:02 - APP - CRITICAL - Application crashed. Initiating restart...
+2025-12-20 10:15:10 - APP - INFO - Application 'EquipmentRental' restarted successfully
+2025-12-20 12:00:00 - SYSTEM - INFO - Disk usage check: 85% used. Status: Warning
+2025-12-20 12:00:01 - SYSTEM - WARNING - Disk cleanup recommended. Current usage: 85%
+2025-12-20 14:22:11 - SECURITY - INFO - Login attempt from internal VPN detected
+2025-12-20 14:22:11 - SECURITY - INFO - User 'alice' logged in from 10.0.0.5 (Internal VPN)
+2025-12-20 15:30:00 - APP - INFO - Rental request received: Excavator for 4 days from 10.0.0.5
+2025-12-20 15:30:00 - APP - INFO - Rental confirmed: Excavator, 4 days, Total: $1800
+2025-12-20 18:00:00 - APP - INFO - Daily summary: 7 rentals processed, $10,950 total revenue
+
+2025-12-21 02:00:00 - SYSTEM - WARNING - Disk usage check: 92% used. Critical threshold exceeded!
+2025-12-21 02:00:01 - SYSTEM - CRITICAL - Disk space critically low. Immediate action required.
+2025-12-21 02:00:02 - SYSTEM - INFO - Automated cleanup initiated: removing logs older than 30 days
+2025-12-21 02:05:00 - SYSTEM - INFO - Cleanup completed. 2.3GB freed. Current usage: 71%
+2025-12-21 03:15:45 - APP - ERROR - ValueError: Invalid equipment type 'SpaceShuttle' submitted from 198.51.100.23
+2025-12-21 03:15:45 - APP - WARNING - Unknown equipment type requested. Possible fuzzing attempt from 198.51.100.23
+2025-12-21 03:15:46 - APP - ERROR - ValueError: Invalid equipment type 'DropTable' submitted from 198.51.100.23
+2025-12-21 03:15:46 - SECURITY - WARNING - Potential SQL injection attempt detected in equipment field from 198.51.100.23
+2025-12-21 03:15:47 - APP - ERROR - ValueError: Invalid equipment type '<script>alert(1)</script>' submitted from 198.51.100.23
+2025-12-21 03:15:47 - SECURITY - CRITICAL - XSS injection attempt detected from 198.51.100.23
+2025-12-21 03:15:48 - SECURITY - INFO - IP 198.51.100.23 added to permanent blocklist
+2025-12-21 03:15:49 - SECURITY - INFO - Security incident logged. Reference: SIR-2025-1221-001
+2025-12-21 06:00:01 - SYSTEM - INFO - Daily log rotation completed. Previous logs archived.
+2025-12-21 06:00:10 - APP - INFO - Application 'EquipmentRental' started. Version 2.1.3
+2025-12-21 08:30:00 - APP - INFO - Home page accessed from 192.168.1.55
+2025-12-21 09:00:00 - SECURITY - INFO - Login successful for user 'bob' from IP: 192.168.1.55
+2025-12-21 09:15:00 - APP - INFO - Rental request received: Crane for 3 days from 192.168.1.55
+2025-12-21 09:15:00 - APP - INFO - Rental confirmed: Crane, 3 days, Total: $2400
+2025-12-21 10:00:00 - APP - INFO - Rental request received: Bulldozer for -10 days from 192.168.1.99
+2025-12-21 10:00:00 - APP - ERROR - AssertionError: Number of days must be greater than zero. Input: days=-10
+2025-12-21 10:00:01 - SECURITY - WARNING - Negative days exploitation attempt from 192.168.1.99
+2025-12-21 11:30:00 - NETWORK - INFO - SSL certificate renewal successful. Valid until: 2026-12-21
+2025-12-21 14:22:33 - SYSTEM - INFO - Disk usage check: 68% used. Status: Healthy
+2025-12-21 15:45:00 - APP - INFO - Rental request received: Excavator for 2 days from 192.168.1.102
+2025-12-21 15:45:00 - APP - INFO - Rental confirmed: Excavator, 2 days, Total: $900
+2025-12-21 18:00:00 - APP - INFO - Daily summary: 14 rentals processed, $21,300 total revenue
+2025-12-21 23:59:59 - SYSTEM - INFO - End of log period. Weekly security report generated.

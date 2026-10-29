@@ -1,0 +1,306 @@
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:25:31Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "application_start", "action": "start_development_server"}
+2026-10-29T15:25:31Z - INFO - {"event": "login_success", "action": "redirect_home", "username": "admin", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 302, "path": "/login"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "login_failed", "action": "reject_login", "ip": "127.0.0.1", "allowed_username": true}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 302, "path": "/login"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/login"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "0", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-1", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "366", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "999999", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "1.5", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": " 3", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "1e2", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "\u0663", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Excavator", "rate": 450}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 2250}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Crane", "rate": 800}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1600}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 500}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:25:31Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 182500}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - WARNING - {"event": "login_disabled", "action": "reject_login", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 503, "path": "/login"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "203.0.113.45"}
+2026-10-29T15:25:31Z - WARNING - {"event": "untrusted_network", "action": "observe_request", "ip": "203.0.113.45"}
+2026-10-29T15:25:31Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "not-an-ip"}
+2026-10-29T15:25:31Z - WARNING - {"event": "invalid_client_ip", "action": "reject_request"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 400, "path": "/"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "bad\nFORGED", "ip": "127.0.0.1"}
+2026-10-29T15:25:31Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/login"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 413, "path": "/rent"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Crane", "rate": 800}
+2026-10-29T15:25:32Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1600}
+2026-10-29T15:25:32Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Crane", "days": 2, "total_cost": 1600, "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "Unknown", "ip": "127.0.0.1"}
+2026-10-29T15:25:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:17Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:17Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:26:17Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:17Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:17Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:26:17Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:18Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:18Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:26:18Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:18Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:18Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:26:18Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:26:18Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:26:18Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:26:32Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:33Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:33Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:26:33Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:26:33Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:26:33Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:34Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:34Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:26:35Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/favicon.ico", "ip": "127.0.0.1"}
+2026-10-29T15:26:35Z - INFO - {"event": "request_completed", "action": "return_response", "status": 404, "path": "/favicon.ico"}
+2026-10-29T15:26:35Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:26:35Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:26:35Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:26:35Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:26:35Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:45Z - INFO - {"event": "application_start", "action": "start_development_server"}
+2026-10-29T15:27:53Z - INFO - {"event": "application_start", "action": "start_development_server"}
+2026-10-29T15:27:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:55Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:27:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:55Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:27:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:56Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:56Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:27:56Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:56Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:56Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:27:56Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:27:56Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:27:56Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.min.css", "ip": "127.0.0.1"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.bundle.min.js", "ip": "127.0.0.1"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/static/vendor/bootstrap.bundle.min.js"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/static/vendor/bootstrap.min.css"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/favicon.ico", "ip": "127.0.0.1"}
+2026-10-29T15:27:58Z - INFO - {"event": "request_completed", "action": "return_response", "status": 404, "path": "/favicon.ico"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:27:59Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:27:59Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:27:59Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.min.css", "ip": "127.0.0.1"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_completed", "action": "return_response", "status": 304, "path": "/static/vendor/bootstrap.min.css"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.bundle.min.js", "ip": "127.0.0.1"}
+2026-10-29T15:27:59Z - INFO - {"event": "request_completed", "action": "return_response", "status": 304, "path": "/static/vendor/bootstrap.bundle.min.js"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:31:50Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:31:50Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "login_success", "action": "redirect_home", "username": "admin", "ip": "127.0.0.1"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_completed", "action": "return_response", "status": 302, "path": "/login"}
+2026-10-29T15:31:50Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "login_failed", "action": "reject_login", "ip": "127.0.0.1", "allowed_username": true}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 302, "path": "/login"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/login"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "0", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-1", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "366", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "999999", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "1.5", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": " 3", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "1e2", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "\u0663", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Excavator", "rate": 450}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 2250}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Crane", "rate": 800}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1600}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 500}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 182500}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "login_disabled", "action": "reject_login", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 503, "path": "/login"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "203.0.113.45"}
+2026-10-29T15:31:51Z - WARNING - {"event": "untrusted_network", "action": "observe_request", "ip": "203.0.113.45"}
+2026-10-29T15:31:51Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "not-an-ip"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_client_ip", "action": "reject_request"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 400, "path": "/"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "bad\nFORGED", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "home_accessed", "action": "render_home"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/login", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/login"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 413, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Crane", "rate": 800}
+2026-10-29T15:31:51Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1600}
+2026-10-29T15:31:51Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Crane", "days": 2, "total_cost": 1600, "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "Unknown", "ip": "127.0.0.1"}
+2026-10-29T15:31:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:51Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:51Z - ERROR - {"event": "unknown_equipment", "action": "reject_rental", "equipment": "SpaceShuttle", "ip": "127.0.0.1"}
+2026-10-29T15:32:51Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "abc", "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - WARNING - {"event": "invalid_rental_days", "action": "reject_rental", "days": "-5", "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:32:52Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:32:52Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:32:52Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.min.css", "ip": "127.0.0.1"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/static/vendor/bootstrap.min.css"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.bundle.min.js", "ip": "127.0.0.1"}
+2026-10-29T15:32:54Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/static/vendor/bootstrap.bundle.min.js"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/favicon.ico", "ip": "127.0.0.1"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 404, "path": "/favicon.ico"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "POST", "path": "/rent", "ip": "127.0.0.1"}
+2026-10-29T15:32:55Z - INFO - {"event": "assertion_passed", "action": "verified_positive_integer_rate", "equipment": "Bulldozer", "rate": 500}
+2026-10-29T15:32:55Z - INFO - {"event": "assertion_passed", "action": "verified_positive_total", "total": 1500}
+2026-10-29T15:32:55Z - INFO - {"event": "rental_calculated", "action": "show_confirmation", "equipment": "Bulldozer", "days": 3, "total_cost": 1500, "ip": "127.0.0.1"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 200, "path": "/rent"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.min.css", "ip": "127.0.0.1"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_received", "action": "process_request", "method": "GET", "path": "/static/vendor/bootstrap.bundle.min.js", "ip": "127.0.0.1"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 304, "path": "/static/vendor/bootstrap.bundle.min.js"}
+2026-10-29T15:32:55Z - INFO - {"event": "request_completed", "action": "return_response", "status": 304, "path": "/static/vendor/bootstrap.min.css"}

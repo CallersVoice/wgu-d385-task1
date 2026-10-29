@@ -1,0 +1,3 @@
+$ /workspace/wgu_security/.venv/bin/python -m flake8 app_student.py
+
+Exit code: 0

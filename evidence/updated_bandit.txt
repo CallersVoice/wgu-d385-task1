@@ -1,0 +1,49 @@
+$ /workspace/wgu_security/.venv/bin/python -m bandit app_student.py
+[main]	INFO	profile include tests: None
+[main]	INFO	profile exclude tests: None
+[main]	INFO	cli include tests: None
+[main]	INFO	cli exclude tests: None
+[main]	INFO	running on Python 3.12.14
+Run started:2026-10-29 15:31:51.988966+00:00
+
+Test results:
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: ./app_student.py:80:4
+79	        raise RuntimeError('Invalid equipment pricing configuration.')
+80	    assert isinstance(daily_rate, int) and daily_rate > 0
+81	    audit(logging.INFO, 'assertion_passed', 'verified_positive_integer_rate',
+
+--------------------------------------------------
+>> Issue: [B101:assert_used] Use of assert detected. The enclosed code will be removed when compiling to optimised byte code.
+   Severity: Low   Confidence: High
+   CWE: CWE-703 (https://cwe.mitre.org/data/definitions/703.html)
+   More Info: https://bandit.readthedocs.io/en/1.9.4/plugins/b101_assert_used.html
+   Location: ./app_student.py:86:4
+85	        raise RuntimeError('Invalid calculated rental total.')
+86	    assert total_cost > 0
+87	    audit(logging.INFO, 'assertion_passed', 'verified_positive_total',
+
+--------------------------------------------------
+
+Code scanned:
+	Total lines of code: 148
+	Total lines skipped (#nosec): 0
+	Total potential issues skipped due to specifically being disabled (e.g., #nosec BXXX): 0
+
+Run metrics:
+	Total issues (by severity):
+		Undefined: 0
+		Low: 2
+		Medium: 0
+		High: 0
+	Total issues (by confidence):
+		Undefined: 0
+		Low: 0
+		Medium: 0
+		High: 2
+Files skipped (0):
+
+Exit code: 1

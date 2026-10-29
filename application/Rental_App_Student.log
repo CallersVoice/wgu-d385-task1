@@ -1,0 +1,20 @@
+2025-12-23 13:18:13,066 - INFO - Home page accessed.
+2025-12-23 13:18:28,938 - INFO - Home page accessed.
+2025-12-23 13:18:30,452 - INFO - Home page accessed.
+2025-12-23 13:18:34,308 - INFO - Home page accessed.
+2025-12-23 13:18:34,322 - INFO - Home page accessed.
+2025-12-23 13:24:24,146 - INFO - Home page accessed.
+2025-12-23 13:36:02,766 - INFO - Home page accessed.
+2025-12-23 13:42:47,370 - INFO - Home page accessed.
+2025-12-23 14:17:47,765 - INFO - Home page accessed.
+2025-12-23 14:17:56,091 - INFO - Rental request received: Bulldozer for 3 days.
+2025-12-23 14:17:56,091 - INFO - Rental confirmed: Bulldozer, Total: $1500
+2025-12-23 14:17:59,859 - INFO - Home page accessed.
+2025-12-23 14:18:07,785 - INFO - Login attempt for user: admin
+2025-12-23 14:18:07,786 - INFO - User 'admin' logged in successfully.
+2025-12-23 14:18:07,791 - INFO - Home page accessed.
+2025-12-23 14:18:15,036 - INFO - Home page accessed.
+2025-12-23 14:21:03,781 - INFO - Login attempt for user: admin
+2025-12-23 14:21:03,782 - INFO - User 'admin' logged in successfully.
+2025-12-23 14:21:03,785 - INFO - Home page accessed.
+2025-12-23 14:21:15,482 - INFO - Home page accessed.

@@ -1,0 +1,6 @@
+owasp_static.md: https://raw.githubusercontent.com/OWASP/www-community/master/pages/controls/Static_Code_Analysis.md
+owasp_logging.md: https://raw.githubusercontent.com/OWASP/CheatSheetSeries/master/cheatsheets/Logging_Cheat_Sheet.md
+python_assert.rst: https://raw.githubusercontent.com/python/cpython/3.12/Doc/reference/simple_stmts.rst
+python_logging.rst: https://raw.githubusercontent.com/python/cpython/3.12/Doc/library/logging.rst
+werkzeug_security.py: https://raw.githubusercontent.com/pallets/werkzeug/main/src/werkzeug/security.py
+flask_security.rst: https://raw.githubusercontent.com/pallets/flask/main/docs/web-security.rst

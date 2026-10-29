@@ -1,0 +1,5 @@
+Real Chromium browser; live Flask server on port 5000.
+Submitted equipment_type=Bulldozer, days=3 through the form.
+Verified Rental Confirmation and Total Cost: $1500.
+00_application_running.png captures the rendered response.
+01–04 PNG files capture real pytest-html reports, not an IDE.

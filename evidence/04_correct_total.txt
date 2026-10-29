@@ -1,0 +1,13 @@
+$ /workspace/wgu_security/.venv/bin/python -m pytest test_run.py::test_student_correct_output -v --html=../evidence/04_correct_total.html --self-contained-html
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- /workspace/wgu_security/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.14', 'Platform': 'Linux-6.18.55-x86_64-with-glibc2.41', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'metadata': '3.1.1', 'html': '4.2.0'}}
+rootdir: /workspace/wgu_security/submission/application
+plugins: metadata-3.1.1, html-4.2.0
+collecting ... collected 1 item
+
+test_run.py::test_student_correct_output PASSED                          [100%]
+
+- Generated html report: file:///workspace/wgu_security/submission/application/../evidence/04_correct_total.html -
+============================== 1 passed in 0.08s ===============================

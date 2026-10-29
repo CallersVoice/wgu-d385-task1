@@ -1,0 +1,45 @@
+$ /workspace/wgu_security/.venv/bin/python -m pytest test_run.py -v --junitxml=../evidence/test_results.xml --html=../evidence/all_tests.html --self-contained-html
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0 -- /workspace/wgu_security/.venv/bin/python
+cachedir: .pytest_cache
+metadata: {'Python': '3.12.14', 'Platform': 'Linux-6.18.55-x86_64-with-glibc2.41', 'Packages': {'pytest': '9.2.0', 'pluggy': '1.7.0'}, 'Plugins': {'metadata': '3.1.1', 'html': '4.2.0'}}
+rootdir: /workspace/wgu_security/submission/application
+plugins: metadata-3.1.1, html-4.2.0
+collecting ... collected 30 items
+
+test_run.py::test_invalid_equipment_type_handled PASSED                  [  3%]
+test_run.py::test_non_numeric_days_handled PASSED                        [  6%]
+test_run.py::test_negative_days_rejected PASSED                          [ 10%]
+test_run.py::test_student_input_validation PASSED                        [ 13%]
+test_run.py::test_student_correct_output PASSED                          [ 16%]
+test_run.py::test_student_application_behavior PASSED                    [ 20%]
+test_run.py::test_invalid_duration_boundaries[] PASSED                   [ 23%]
+test_run.py::test_invalid_duration_boundaries[None] PASSED               [ 26%]
+test_run.py::test_invalid_duration_boundaries[0] PASSED                  [ 30%]
+test_run.py::test_invalid_duration_boundaries[-1] PASSED                 [ 33%]
+test_run.py::test_invalid_duration_boundaries[366] PASSED                [ 36%]
+test_run.py::test_invalid_duration_boundaries[999999] PASSED             [ 40%]
+test_run.py::test_invalid_duration_boundaries[1.5] PASSED                [ 43%]
+test_run.py::test_invalid_duration_boundaries[ 3] PASSED                 [ 46%]
+test_run.py::test_invalid_duration_boundaries[1e2] PASSED                [ 50%]
+test_run.py::test_invalid_duration_boundaries[\u0663] PASSED             [ 53%]
+test_run.py::test_calculation_boundaries[Excavator-5-2250] PASSED        [ 56%]
+test_run.py::test_calculation_boundaries[Crane-2-1600] PASSED            [ 60%]
+test_run.py::test_calculation_boundaries[Bulldozer-1-500] PASSED         [ 63%]
+test_run.py::test_calculation_boundaries[Bulldozer-365-182500] PASSED    [ 66%]
+test_run.py::test_missing_equipment PASSED                               [ 70%]
+test_run.py::test_login_disabled_without_secret PASSED                   [ 73%]
+test_run.py::test_external_address_warning PASSED                        [ 76%]
+test_run.py::test_invalid_address_rejected PASSED                        [ 80%]
+test_run.py::test_forwarded_header_not_trusted PASSED                    [ 83%]
+test_run.py::test_logs_are_structured_and_injection_safe PASSED          [ 86%]
+test_run.py::test_validation_survives_optimized_python PASSED            [ 90%]
+test_run.py::test_get_forms_and_security_headers PASSED                  [ 93%]
+test_run.py::test_request_size_limit PASSED                              [ 96%]
+test_run.py::test_log_levels_and_assertion_records PASSED                [100%]
+
+- generated xml file: /workspace/wgu_security/submission/evidence/test_results.xml -
+- Generated html report: file:///workspace/wgu_security/submission/application/../evidence/all_tests.html -
+============================== 30 passed in 0.96s ==============================
+
+Exit code: 0

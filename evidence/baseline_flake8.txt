@@ -1,0 +1,38 @@
+$ /workspace/wgu_security/.venv/bin/python -m flake8 app_student.py
+app_student.py:6:80: E501 line too long (85 > 79 characters)
+app_student.py:17:80: E501 line too long (83 > 79 characters)
+app_student.py:23:80: E501 line too long (86 > 79 characters)
+app_student.py:24:80: E501 line too long (81 > 79 characters)
+app_student.py:28:1: F401 'flask.jsonify' imported but unused
+app_student.py:28:80: E501 line too long (84 > 79 characters)
+app_student.py:53:1: E302 expected 2 blank lines, found 1
+app_student.py:59:1: W293 blank line contains whitespace
+app_student.py:69:1: E302 expected 2 blank lines, found 1
+app_student.py:72:32: E261 at least two spaces before inline comment
+app_student.py:75:1: E302 expected 2 blank lines, found 1
+app_student.py:80:1: W293 blank line contains whitespace
+app_student.py:81:80: E501 line too long (81 > 79 characters)
+app_student.py:82:9: F841 local variable 'ip_address' is assigned to but never used
+app_student.py:82:41: W291 trailing whitespace
+app_student.py:83:1: W293 blank line contains whitespace
+app_student.py:86:80: E501 line too long (115 > 79 characters)
+app_student.py:88:80: E501 line too long (116 > 79 characters)
+app_student.py:89:1: W293 blank line contains whitespace
+app_student.py:93:49: W291 trailing whitespace
+app_student.py:104:1: E302 expected 2 blank lines, found 1
+app_student.py:107:1: W293 blank line contains whitespace
+app_student.py:115:80: E501 line too long (91 > 79 characters)
+app_student.py:116:1: W293 blank line contains whitespace
+app_student.py:119:1: W293 blank line contains whitespace
+app_student.py:122:1: W293 blank line contains whitespace
+app_student.py:123:80: E501 line too long (84 > 79 characters)
+app_student.py:125:1: W293 blank line contains whitespace
+app_student.py:127:1: W293 blank line contains whitespace
+app_student.py:137:1: W293 blank line contains whitespace
+app_student.py:139:1: W293 blank line contains whitespace
+app_student.py:140:80: E501 line too long (95 > 79 characters)
+app_student.py:144:1: E305 expected 2 blank lines after class or function definition, found 1
+app_student.py:145:37: E261 at least two spaces before inline comment
+app_student.py:146:36: W292 no newline at end of file
+
+Exit code: 1

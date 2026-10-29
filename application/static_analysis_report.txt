@@ -1,0 +1,234 @@
+================================================================================
+                    STATIC CODE ANALYSIS REPORT
+                    WGU Construction Equipment Rental Application
+                    Generated for: app_student.py
+================================================================================
+
+This report demonstrates the use of static code analysis tools to identify
+code quality issues and security vulnerabilities WITHOUT executing the code.
+
+Static analysis helps detect:
+- Code style violations (PEP 8 compliance)
+- Potential bugs and logic errors
+- Security vulnerabilities
+- Unused variables and imports
+
+Tools Used:
+- Flake8 (Code Quality & Style)
+- Bandit (Security Analysis)
+
+================================================================================
+                         SECTION 1: FLAKE8 ANALYSIS
+                         (Code Quality & PEP 8 Compliance)
+================================================================================
+
+Flake8 checks Python code against PEP 8 style guidelines and detects common
+programming errors.
+
+FINDINGS SUMMARY:
+-----------------
+| Code  | Count | Description                                        |
+|-------|-------|----------------------------------------------------|
+| E261  |   2   | At least two spaces before inline comment          |
+| E302  |   4   | Expected 2 blank lines, found 1                    |
+| E305  |   1   | Expected 2 blank lines after function definition   |
+| E501  |   9   | Line too long (>79 characters)                     |
+| F401  |   1   | Module imported but unused                         |
+| F841  |   1   | Local variable assigned but never used             |
+| W291  |   2   | Trailing whitespace                                |
+| W292  |   1   | No newline at end of file                          |
+| W293  |  12   | Blank line contains whitespace                     |
+-----------------
+TOTAL: 33 issues found
+
+DETAILED FINDINGS:
+------------------
+
+[F401] UNUSED IMPORT (Line 22)
+    from flask import Flask, render_template, request, jsonify, flash, redirect, url_for
+    Issue: 'jsonify' is imported but never used in the code.
+    Impact: Unnecessary imports increase memory usage and reduce code clarity.
+    Fix: Remove 'jsonify' from the import statement or use it in the code.
+
+[F841] UNUSED VARIABLE (Line 76)
+    ip_address = request.remote_addr
+    Issue: Variable 'ip_address' is assigned but never used.
+    Impact: This suggests incomplete implementation - the IP should be logged
+            and checked for suspicious patterns per the TODO comments.
+    Fix: Implement the IP address logging and validation as specified in TODOs.
+
+[E302] MISSING BLANK LINES (Lines 47, 63, 69, 98)
+    Issue: PEP 8 requires 2 blank lines before function/class definitions.
+    Impact: Reduces code readability.
+    Fix: Add blank lines between function definitions.
+
+[E501] LINE TOO LONG (Multiple lines)
+    Issue: Lines exceed 79 characters (PEP 8 maximum).
+    Affected: Lines 6, 15, 22, 75, 80, 82, 109, 117, 134
+    Fix: Break long lines using parentheses or backslash continuation.
+
+[W291/W293] WHITESPACE ISSUES (Multiple lines)
+    Issue: Trailing whitespace and blank lines containing whitespace.
+    Impact: Can cause issues with version control diffs.
+    Fix: Remove trailing whitespace from all lines.
+
+
+================================================================================
+                         SECTION 2: BANDIT ANALYSIS
+                         (Security Vulnerability Detection)
+================================================================================
+
+Bandit is a security-focused static analysis tool that finds common security
+issues in Python code.
+
+FINDINGS SUMMARY:
+-----------------
+| Severity | Confidence | Count | Description                           |
+|----------|------------|-------|---------------------------------------|
+| LOW      | MEDIUM     |   2   | Hardcoded password strings            |
+-----------------
+TOTAL: 2 security issues found
+
+DETAILED FINDINGS:
+------------------
+
+[B105] HARDCODED PASSWORD STRING - ISSUE #1
+    Severity: Low | Confidence: Medium
+    Location: Line 25
+    CWE: CWE-259 (Use of Hard-coded Password)
+
+    VULNERABLE CODE:
+    ```python
+    app.secret_key = 'supersecretkeyforflasksessions'
+    ```
+
+    SECURITY RISK:
+    - Hardcoded secrets can be exposed if source code is leaked
+    - Anyone with access to the codebase knows the secret key
+    - Flask session cookies could be forged if secret key is compromised
+
+    RECOMMENDED FIX:
+    ```python
+    import os
+    app.secret_key = os.environ.get('FLASK_SECRET_KEY', 'dev-only-fallback')
+    ```
+
+    REFERENCE: https://cwe.mitre.org/data/definitions/259.html
+
+--------------------------------------------------
+
+[B105] HARDCODED PASSWORD STRING - ISSUE #2
+    Severity: Low | Confidence: Medium
+    Location: Line 85
+    CWE: CWE-259 (Use of Hard-coded Password)
+
+    VULNERABLE CODE:
+    ```python
+    if validate_username(username) and password == "secret123":
+    ```
+
+    SECURITY RISK:
+    - Password is visible in plain text in source code
+    - No password hashing - stored and compared as plain text
+    - Easily discoverable by anyone with code access
+    - Cannot be changed without modifying source code
+
+    RECOMMENDED FIX:
+    ```python
+    import hashlib
+    # Store hashed passwords, not plain text
+    HASHED_PASSWORD = hashlib.sha256('actual_password'.encode()).hexdigest()
+
+    # Compare hashed values
+    if validate_username(username) and \
+       hashlib.sha256(password.encode()).hexdigest() == HASHED_PASSWORD:
+    ```
+
+    BETTER FIX (Production):
+    ```python
+    from werkzeug.security import check_password_hash
+    # Retrieve hashed password from secure database
+    if validate_username(username) and check_password_hash(stored_hash, password):
+    ```
+
+    REFERENCE: https://cwe.mitre.org/data/definitions/259.html
+
+
+================================================================================
+                    SECTION 3: ADDITIONAL VULNERABILITIES
+                    (Manual Code Review Findings)
+================================================================================
+
+The following issues were identified through manual code review and are NOT
+detected by automated static analysis tools:
+
+[MANUAL-001] MISSING INPUT VALIDATION
+    Location: Lines 112-115 (rent_equipment function)
+
+    VULNERABLE CODE:
+    ```python
+    daily_rate = EQUIPMENT_PRICES[equipment_type]  # KeyError if invalid
+    days = int(days_str)                           # ValueError if non-numeric
+    ```
+
+    RISK: Application crashes on invalid input (Denial of Service)
+    FIX: Wrap in try/except blocks and validate input before processing.
+
+[MANUAL-002] NEGATIVE VALUE EXPLOITATION
+    Location: Line 120
+
+    VULNERABLE CODE:
+    ```python
+    total_cost = daily_rate * days  # Allows negative costs!
+    ```
+
+    RISK: Users can submit negative days to get "refunds" or credits
+    FIX: Add assertion or validation: assert days > 0
+
+[MANUAL-003] MISSING LOGGING CONFIGURATION
+    Location: Throughout file
+
+    ISSUE: Uses print() statements instead of proper logging
+    RISK:
+    - No audit trail for security events
+    - Cannot track failed login attempts (brute force detection)
+    - No visibility into application errors in production
+
+    FIX: Configure Python's logging module as specified in TODOs.
+
+[MANUAL-004] NO RATE LIMITING
+    Location: /login route
+
+    ISSUE: No protection against brute force attacks
+    RISK: Attackers can attempt unlimited password guesses
+    EVIDENCE: network_security_log.txt shows brute force attempts
+    FIX: Implement rate limiting or account lockout.
+
+
+================================================================================
+                         SECTION 4: SUMMARY & METRICS
+================================================================================
+
+CODE METRICS:
+-------------
+Total lines of code: 73
+Total issues found:  35+ (33 Flake8 + 2 Bandit + 4 Manual)
+
+ISSUE BREAKDOWN BY CATEGORY:
+----------------------------
+| Category              | Count | Priority |
+|-----------------------|-------|----------|
+| Security Issues       |   6   | HIGH     |
+| Code Quality (PEP 8)  |  33   | LOW      |
+| Potential Bugs        |   2   | MEDIUM   |
+
+RECOMMENDATIONS:
+----------------
+1. HIGH PRIORITY: Address all security findings (hardcoded credentials)
+2. HIGH PRIORITY: Implement input validation and exception handling
+3. MEDIUM PRIORITY: Add logging configuration for audit trail
+4. LOW PRIORITY: Fix PEP 8 style violations for maintainability
+
+================================================================================
+                              END OF REPORT
+================================================================================
